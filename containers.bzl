@@ -26,8 +26,8 @@ def repositories():
     container_pull(
         name = "alpine-base",
         digest = "sha256:bd327018b3effc802514b63cc90102bfcd92765f4486fc5abc28abf7eb9f1e4d",  # 2018/09/20
-        registry = "gcr.io",
-        repository = "k8s-prow/alpine",
+        registry = "us.gcr.io",
+        repository = "stoked-cosine-252120/alpine",
         tag = "0.1",  # TODO(fejta): update or replace
     )
 
@@ -59,7 +59,7 @@ def repositories():
         name = "git-base",
         digest = "sha256:01b0f83fe91b782ec7ddf1e742ab7cc9a2261894fd9ab0760ebfd39af2d6ab28",  # 2018/07/02
         registry = "gcr.io",
-        repository = "k8s-prow/git",
+        repository = "stoked-cosine-252120/git",
         tag = "0.2",  # TODO(fejta): update or replace
     )
 

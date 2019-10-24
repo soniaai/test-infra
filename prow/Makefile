@@ -21,13 +21,13 @@ ALPINE_VERSION           ?= 0.1
 GIT_VERSION              ?= 0.2
 
 # These are the usual GKE variables.
-PROJECT       ?= k8s-prow
+PROJECT       ?= stoked-cosine-252120
 BUILD_PROJECT ?= k8s-prow-builds
 ZONE          ?= us-central1-f
 CLUSTER       ?= prow
 
 # Build and push specific variables.
-REGISTRY ?= gcr.io
+REGISTRY ?= us.gcr.io
 PUSH     ?= docker push
 
 export PROW_REPO_OVERRIDE ?= $(REGISTRY)/$(PROJECT)
