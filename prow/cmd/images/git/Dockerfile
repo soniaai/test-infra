@@ -12,6 +12,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-FROM gcr.io/k8s-prow/alpine:0.1
+FROM alpine@sha256:e4355b66995c96b4b468159fc5c7e3540fcef961189ca13fee877798649f531a
 
 RUN apk add --no-cache git openssh
