@@ -119,6 +119,7 @@ func (g *gitCtx) commandsForBaseRef(refs prowapi.Refs, gitUserName, gitUserEmail
 	commands := []cloneCommand{{dir: "/", env: g.env, command: "mkdir", args: []string{"-p", g.cloneDir}}}
 
 	commands = append(commands, g.gitCommand("init"))
+	commands = append(commands, g.gitCommand("config", "lfs.url", g.repositoryURI))
 	if gitUserName != "" {
 		commands = append(commands, g.gitCommand("config", "user.name", gitUserName))
 	}
